@@ -1,0 +1,23 @@
+.v-Message {
+  box-sizing: border-box;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 150px);
+  width: 300px;
+  background-color: mix(#fff, #67C23A, 90%);
+  color: #67C23A;
+  border-radius: 6px;
+
+  .v-Message-title {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .v-Message-conetnt {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+  }
+}

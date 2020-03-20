@@ -24,6 +24,10 @@
 // @ is an alias to /src
 import VForm from '@/components/VForm'
 import VInput from '@/components/VInput'
+import VMessage from '@/components/VMessage'
+import Vue from 'vue'
+
+Vue.use(VMessage)
 
 const VFormItem = VForm.Item
 
@@ -52,7 +56,11 @@ export default {
   methods: {
     submit () {
       this.$refs.VForm.validate((result) => {
-        alert(result)
+        console.log(this)
+        this.$message({
+          title: '校验提示',
+          message: '校验成功'
+        })
       })
     }
   }
