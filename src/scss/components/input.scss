@@ -1,0 +1,10 @@
+$default-input-border: #ccc;
+$default-input-height: 28px;
+
+.v-input {
+  height: $default-input-height;
+  border: 1px solid $default-input-border;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 12px;
+}

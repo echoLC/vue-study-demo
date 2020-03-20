@@ -1,0 +1,21 @@
+$default-error-color: #f56c6c;
+
+.vForm-item {
+  margin-bottom: 16px;
+}
+
+.vForm-item__content {
+  display: flex;
+}
+
+.vForm-item__label {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.vForm-item__error {
+  color: $default-error-color;
+  font-weight: 400;
+  margin-top: 6px;
+}
