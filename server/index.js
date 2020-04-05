@@ -26,7 +26,12 @@ app.get('*', async (req, res) => {
     })
     res.send(html)
   } catch (err) { 
-    res.status(500).send('服务器渲染错误，请重试！')
+    // 这里可以做一系列的路由权限处理，包括404处理
+    if (err.code === 404) {
+      res.status(404).end('Page not found')
+    } else {
+      res.status(500).send('服务器渲染错误，请重试！')
+    }
   }
 })
 
